@@ -1,0 +1,148 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography & Base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9fb;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #6C4AB6;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-area:hover {
+    border-color: #6C4AB6;
+    background: #fafafa;
+}
+
+.upload-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6C4AB6;
+}
+
+/* Actions */
+.upload-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.upload-actions button,
+.submit-btn {
+    background: #6C4AB6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upload-actions button:hover,
+.submit-btn:hover {
+    background: #563f99;
+}
+
+/* Preview */
+.preview-area {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.preview-area img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Output */
+.output-area {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.output-box {
+    background: #f1f1f5;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 100px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+
+.output-meta {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.output-meta button,
+.output-meta .download-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: #6C4AB6;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.output-meta button:hover,
+.output-meta .download-btn:hover {
+    background: #563f99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .upload-actions {
+        flex-direction: column;
+    }
+
+    .upload-actions button {
+        width: 100%;
+    }
+
+    .output-meta {
+        text-align: center;
+    }
+}

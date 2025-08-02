@@ -1,0 +1,126 @@
+/* Landing Page Styles */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #6C4AB6;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    background: #6C4AB6;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #563f99;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.feature-box h3 {
+    color: #6C4AB6;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+/* Animasi Background */
+.floating-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%236C4AB6' fill-opacity='0.1' d='M0 67 C 273,183 822,-40 1920.00,106 L1920 0 L0 0 Z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    background-size: cover;
+    animation: float 10s ease-in-out infinite;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Penjelasan / Explanation Section */
+.explanation {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.explanation h2 {
+    color: #6C4AB6;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.explanation p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
